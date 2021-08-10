@@ -1,0 +1,12 @@
+main:
+	addi $s0,$zero,1000         #writebacks from rowbuffer to memory doesn't occur until sw instruction is executed
+	lw $t0, 0($s0)
+	lw $t1, 2000($zero)
+	lw $t2, 3000($zero)
+	addi $t8,$t8,1
+	sw $t8, 4000($zero)     
+	lw $t3, 4000($zero)
+	lw $t4, 5000($zero)
+	lw $t5, 5004($zero)
+	
+exit:

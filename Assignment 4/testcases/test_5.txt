@@ -1,0 +1,7 @@
+main:
+	addi $s0,$zero,1000         #redundant instructions aren't executed.
+	lw $t0, 0($s0)              # only the lw instructions is executed.
+	lw $t1, 2000($zero)
+	lw $t1, 2004($zero)
+	lw $t1, 2008($zero)
+	lw $t1, 2012($zero)
