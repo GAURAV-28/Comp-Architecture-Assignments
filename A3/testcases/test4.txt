@@ -1,0 +1,2 @@
+addi $r5, $zero, 45
+mul $zero, $r5, $r7
