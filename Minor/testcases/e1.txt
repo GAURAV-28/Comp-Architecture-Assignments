@@ -1,0 +1,5 @@
+main:
+	addi $s0, $s0, 16
+	lw $t0, 0($s0)
+	lw $t1, -2($sp)
+	
