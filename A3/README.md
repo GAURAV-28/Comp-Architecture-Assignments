@@ -1,4 +1,4 @@
-# COP216: Assignment 3
+# COL216: Assignment 3
 
 ## About:
 
